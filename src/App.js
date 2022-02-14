@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Button, NoCompButton, ButtonLabel } from './Components/Button.style';
+import { Container } from './Components/Container.style';
+import { GlobalStyle } from './GlobalStyle.style';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <GlobalStyle />
+      <NoCompButton backgroundColor="red">
+        <ButtonLabel>This is a button</ButtonLabel>
+      </NoCompButton>
+      <Button buttonLabel="Click Here" backgroundColor="violet"></Button>
+    </Container>
   );
 }
 
